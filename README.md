@@ -5,6 +5,7 @@ means of the transfer of information and funds over the Internet. Now, with a si
 everything that a transaction needs, can be executed online.
 
 The main features include:
+
 signup/signin page
 Navigation Bar (Name of website, Home, Cart and Sign out)
 User Dashboard (index.html)
