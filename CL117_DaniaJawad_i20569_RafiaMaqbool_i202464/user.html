@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+     <meta charset="UTF-8">
+     <title>Ecommerce Website Design</title>
+     <link rel="stylesheet" href="style.css"> 
+
+</head>
+<style>
+.navigation{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.nav input[type=text] {
+    text-align: left;
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+ nav a{
+    text-decoration: none;
+    color:rgb(190, 141, 190);
+}
+body{
+     background: beige;
+}
+.order-history{
+    border-bottom: 3px solid burlywood;   
+}
+.account-details{
+   float: right;
+   height: min-content;
+}
+.cart-page{
+    margin: 20px auto;
+}
+table{
+    width: 50%;
+    border-collapse: collapse;
+}
+.cart-info{
+   display: flex; 
+   flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: burlywood;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+
+}
+td a{
+    color: red);
+    font-size: 12px;
+}
+td img{
+      width: 50px;
+      height: 50px;
+      margin-right:10px ;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid burlywood;
+    width: 50%;
+    max-width: 420px;
+    display: flex; 
+   flex-wrap: wrap;
+}
+td:last-child{
+    text-align: right;
+} 
+th:last-child{
+     text-align: right;
+} 
+/*footer*/
+.footer{
+    background: black;
+    color: thistle;
+    height: 150px;
+    width: 200%;    
+}
+.footer p3{
+    color: violet;
+    font-size: 20px;
+}
+.footer h3{
+    color: thistle;
+    margin-bottom: 20px;
+}
+</style>
+<body>
+   <!--------navigation bar----->
+    <div class="header"> 
+    <div class="container">
+      <div class="navigation">
+          <div class="logo">
+              <img src="iict/logo.png" width="150px">
+          </div>
+          <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="signup.html">Sign Up</a></li>
+              <li><a href="login.html">Log In</a></li>
+              <input type="text" placeholder="Search..."/>
+              <a href="billing.html"><img src="Iict/cart.png" width="30px"></a>
+            </ul>
+        </nav>
+      </div>
+      <h2>MY ACCOUNT</h2>
+      <div class="order-history">
+      </div>
+      <h3 align="left">Your Order History</h3>
+            
+<div class="smallcontainer cart-page" style="clear: both;">
+    <div style="float: left; width: 75%;">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>  
+            <tr>
+                <td>
+                    <div class="cart-info">
+                    <img src="iict/book1.jpg" >
+                    <div>
+                        <p>Lord of the Rings</p>
+                        <small> Price: $15.00</small>
+                        <br>
+                    </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$15.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                    <img src="iict/book3.jpg" width="150px">
+                    <div>
+                        <p>The King's Avatar</p>
+                        <small> Price: $12.00</small>
+                        <br>
+                    </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$12.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                    <img src="iict/book2.jpg">
+                    <div>
+                        <p>Pride and Prejudice</p>
+                        <small> Price: $14.00</small>
+                        <br>
+                    </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$14.00</td>
+            </tr>
+       </table>
+    </div>
+   <div style="float: right; width: 25%;">
+    <h3 align="right">Account Details</h3>
+    <h4 align="right">Name: Ms. Sarah Jennifer</h4> 
+    <h4 align="right">Email: Sarah123@gmail.com</h4>
+    <h4 align="right">Contact Number: 0128438983</h4>
+    <h4 align="right">Address: Washington</h4>
+    
+   </div>
+
+
+<!-----footer----->
+
+<div class="footer" style="clear: both;">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col1">
+          <h3>Download Our App</h3>
+          <p></p>
+        </div>
+        <div class="footer-col2">
+          <img src="">
+          <p3>Our Purpose is to fulfill all your reading needs</p3>
+          </div>
+          <div class="footer-col3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li> Contact     
+              </li>
+              <li> Coupons     
+              </li>
+              <li> Blog Post     
+              </li>
+              <li> Return Policy     
+              </li>
+              <li> Join Affiliate     
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>
+                Facebook
+              </li>
+              <li>
+                Twitter
+              </li>
+              <li>
+                Instagram
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    
+    </div>
+    </body>
+    </html>    
